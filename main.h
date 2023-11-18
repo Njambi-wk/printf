@@ -27,6 +27,10 @@ int print_o(va_list val);
 int print_x(va_list val);
 int print_hex_X(va_list val);
 int print_S(va_list val);
+int print_p(va_list val);
+int print_reverse_string(void);
+int print_R(va_list args);
+int print_hex_xtra(unsigned long int num);
 
 
 #endif

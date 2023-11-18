@@ -12,7 +12,8 @@ int _printf(const char *format, ...)
 		{"%%", print_37}, {"%d", print_decimal},
 		{"%i", print_integers}, {"%b", print_binary},
 		{"%u", print_u}, {"%o", print_o}, {"%x", print_x},
-		{"%X", print_hex_X}, {"%S", print_S}
+		{"%X", print_hex_X}, {"%S", print_S}, {"%r", print_reverse_string},
+		{"%R", print_R}, {"%p", print_p}
 	};
 
 	va_list args;
