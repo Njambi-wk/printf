@@ -8,8 +8,11 @@
 int _printf(const char *format, ...)
 {
 	match n[] = {
-		{"%c", print_character}, {"%s", print_string}, {"%%", print_37}, {"%d", print_decimal}, {"%i", print_integers}, {"%b", print_binary},
-	       	{"%u", print_u}, {"%o", print_o}, {"%x", print_x}, {"%X", print_hex_X}, {"%S", print_S}
+		{"%c", print_character}, {"%s", print_string},
+		{"%%", print_37}, {"%d", print_decimal},
+		{"%i", print_integers}, {"%b", print_binary},
+		{"%u", print_u}, {"%o", print_o}, {"%x", print_x},
+		{"%X", print_hex_X}, {"%S", print_S}
 	};
 
 	va_list args;
